@@ -10,6 +10,7 @@
 // 解构赋值
 
 // 对象
+/*
 const course = {
     name1: 'maixiaochai',
     price: 500,
@@ -28,10 +29,21 @@ const {
         age
     }
 } = course;  // 此时的teacher不能作为变量
-console.log(courseName, price, name, age);
+// console.log(courseName, price, name, age);
 
 // 数组
 const courseArr = ['mai', 'xiao', 'chai'];
 const [a, b, c] = courseArr;
 
+
+// 简化函数
+const sumNbr = ([a, b, c]) => {
+    return (a + b + c);
+}
+*/
+
+// 用于json
+const json = '{"name": "maixiaochai", "age": 18}';
+const {name, age} = JSON.parse(json);
+console.log(name, age);
 
